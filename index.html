@@ -5,25 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nyxdrugs Corp. - Redefining Potential</title>
     
-    <!-- Browser Tab Icon (Favicon) -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💊</text></svg>">
 
-    <!-- Open Graph Meta Tags for Social Sharing (WhatsApp, Discord, etc.) -->
-    <!-- IMPORTANT: Replace the placeholder URLs with your actual GitHub Pages URL -->
     <meta property="og:title" content="Nyxdrugs Corp.">
     <meta property="og:description" content="Why be your best self when you can be... something else?">
     <meta property="og:image" content="https://placehold.co/1200x630/00aaff/ffffff?text=Nyxdrugs+Corp.">
     <meta property="og:url" content="https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/">
     <meta name="twitter:card" content="summary_large_image">
 
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- ★★★ THIS IS THE FIX ★★★ -->
-    <!-- The 'defer' attribute tells the browser to load the script but wait until the HTML is fully parsed before running it. -->
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -96,6 +90,27 @@
                             <p class="description">A tin of mints providing the confidence to discuss your niche hobbies for hours.</p>
                         </div>
                     </article>
+
+                    <!-- ★★★ NEW PRODUCT ★★★ -->
+                    <article class="product-card">
+                        <img src="https://placehold.co/400x300/ffffff/000000?text=🎲" alt="A single six-sided die">
+                        <div class="card-content">
+                            <h3>Ambivalex™ - The Decider</h3>
+                            <p class="price">$24.99</p>
+                            <p class="description">A bespoke polycarbonate cube designed to end analysis paralysis. Can't decide what to watch? Let Ambivalex™ choose for you. (Side effects may include watching a terrible movie.)</p>
+                        </div>
+                    </article>
+
+                    <!-- ★★★ NEW PRODUCT ★★★ -->
+                    <article class="product-card">
+                        <img src="https://placehold.co/400x300/8a2be2/ffffff?text=Kreativora" alt="A drop of purple ink in water">
+                        <div class="card-content">
+                            <h3>Kreativora™ - The Muse Dropper</h3>
+                            <p class="price">$59.99</p>
+                            <p class="description">A single, potent drop of food-grade dye. Experience the *feeling* of being a profound artist without the inconvenience of talent or effort. Just add water and stare.</p>
+                        </div>
+                    </article>
+
                 </div>
             </div>
         </section>
@@ -109,10 +124,48 @@
                     <p>Our core methodology, **Neuro-Placebic Resonance™**, leverages the power of suggestion combined with aesthetically pleasing packaging to create a powerful bio-imaginative feedback loop. The result is a guaranteed subjective experience with zero objective impact.</p>
                 </div>
                 <div class="science-charts">
-                    <img src="https://placehold.co/400x250/1e1e1e/ffffff?text=Productivity+Wiggles" alt="A fake chart showing a line wiggling randomly">
-                    <caption>Fig. 1: Measured Impact on Productivity Over Time.</caption>
-                    <img src="https://placehold.co/400x250/1e1e1e/ffffff?text=Ingredient+Pie+Chart" alt="A fake pie chart">
-                    <caption>Fig. 2: Composition of Active Ingredients.</caption>
+                    <figure class="science-diagram">
+                        <!-- Diagram 1: Productivity Line Graph -->
+                        <svg viewBox="0 0 400 250" role="img" aria-labelledby="chart1-title">
+                            <title id="chart1-title">Productivity Graph</title>
+                            <desc>A nonsensical line graph showing productivity wiggling over time.</desc>
+                            <!-- Axes -->
+                            <path d="M 50 20 L 50 200 L 350 200" stroke="#555" stroke-width="2" fill="none" />
+                            <!-- Axis Labels -->
+                            <text x="15" y="110" fill="#b0b0b0" font-size="12" transform="rotate(-90, 25, 110)">Productivity</text>
+                            <text x="180" y="220" fill="#b0b0b0" font-size="12">Time</text>
+                            <!-- The "Data" Line -->
+                            <path d="M 50 150 C 100 50, 150 250, 200 120 S 250 80, 300 160 S 350 100, 350 100" stroke="var(--primary-color)" stroke-width="3" fill="none" />
+                        </svg>
+                        <caption>Fig. 1: Measured Impact on Productivity Over Time.</caption>
+                    </figure>
+
+                    <figure class="science-diagram">
+                        <!-- Diagram 2: Ingredient Pie Chart -->
+                        <svg viewBox="0 0 400 250" role="img" aria-labelledby="chart2-title">
+                            <title id="chart2-title">Ingredient Composition Pie Chart</title>
+                            <desc>A pie chart showing the ingredients are 70% Good Intentions, 25% Vibes, and 5% Actual Substance.</desc>
+                            <!-- Pie Slices -->
+                            <g transform="translate(140, 125) rotate(-90)">
+                                <!-- 70% Good Intentions (the base) -->
+                                <circle r="80" cx="0" cy="0" fill="#8a2be2" />
+                                <!-- 25% Vibes (covers 25% of the base) -->
+                                <path d="M 0 0 L 80 0 A 80 80 0 0 1 -1.95e-5 80 Z" fill="var(--primary-color)" />
+                                <!-- 5% Actual Substance (covers 5% of the base) -->
+                                <path d="M 0 0 L -1.95e-5 80 A 80 80 0 0 1 -24.72 76.08 Z" fill="#555" />
+                            </g>
+                            <!-- Legend -->
+                            <g transform="translate(260, 80)">
+                                <rect width="15" height="15" fill="#8a2be2" />
+                                <text x="25" y="13" fill="#e0e0e0" font-size="14">Good Intentions (70%)</text>
+                                <rect y="30" width="15" height="15" fill="var(--primary-color)" />
+                                <text x="25" y="43" fill="#e0e0e0" font-size="14">Vibes (25%)</text>
+                                <rect y="60" width="15" height="15" fill="#555" />
+                                <text x="25" y="73" fill="#e0e0e0" font-size="14">Actual Substance (5%)</text>
+                            </g>
+                        </svg>
+                        <caption>Fig. 2: Composition of Active Ingredients.</caption>
+                    </figure>
                 </div>
             </div>
         </section>

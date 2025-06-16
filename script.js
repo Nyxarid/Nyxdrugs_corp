@@ -44,7 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
-    const products = ["Mokain", "Seph", "Esde", "Slumbr™", "Social-Ease™"];
+    // ★★★ THIS ARRAY IS NOW UPDATED WITH THE NEW PRODUCTS ★★★
+    const products = ["Mokain", "Seph", "Esde", "Slumbr™", "Social-Ease™", "Ambivalex™", "Kreativora™"];
     let currentQuestionIndex = 0;
 
     startBtn.addEventListener('click', startQuiz);

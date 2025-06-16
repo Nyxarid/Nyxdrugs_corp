@@ -9,7 +9,14 @@
     --body-font: 'Lato', sans-serif;
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+
+/* ★★★ THIS IS THE FIX ★★★ */
+/* This tells the browser to leave a 70px gap at the top when jumping to anchor links, preventing the sticky header from covering the section title. */
+html { 
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px; 
+}
+
 body { font-family: var(--body-font); background-color: var(--dark-bg); color: var(--text-color); line-height: 1.6; }
 .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
 section { padding: 5rem 0; }
