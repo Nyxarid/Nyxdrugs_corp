@@ -16,10 +16,15 @@
     <meta property="og:url" content="https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/">
     <meta name="twitter:card" content="summary_large_image">
 
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- ★★★ THIS IS THE FIX ★★★ -->
+    <!-- The 'defer' attribute tells the browser to load the script but wait until the HTML is fully parsed before running it. -->
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -51,7 +56,6 @@
             <div class="container">
                 <h2>Our Catalogue of Sub-Optimal Solutions</h2>
                 <div class="products-grid">
-                    <!-- Product 1: Mokain -->
                     <article class="product-card">
                         <img src="https://placehold.co/400x300/e0e0e0/000000?text=Mokain" alt="A small baggie of white powder (sugar)">
                         <div class="card-content">
@@ -60,7 +64,6 @@
                             <p class="description">An artisanally-milled powder infused with the <em>idea</em> of productivity.</p>
                         </div>
                     </article>
-                    <!-- Product 2: Seph -->
                     <article class="product-card">
                         <img src="https://placehold.co/400x300/4d94ff/ffffff?text=Seph" alt="A crystal of blue rock candy">
                         <div class="card-content">
@@ -69,7 +72,6 @@
                             <p class="description">Exquisite sucrose crystals that provide the pseudo-focus to win any online argument.</p>
                         </div>
                     </article>
-                    <!-- Product 3: Esde -->
                     <article class="product-card">
                         <img src="https://placehold.co/400x300/f0f0f0/000000?text=Esde" alt="Blotter paper with smiley faces">
                         <div class="card-content">
@@ -78,7 +80,6 @@
                             <p class="description">Organic paper that helps you notice things, like that scuff mark on the wall.</p>
                         </div>
                     </article>
-                     <!-- NEW Product 4: Slumbr -->
                     <article class="product-card">
                         <img src="https://placehold.co/400x300/cccccc/121212?text=Slumbr" alt="A sleek mist spray bottle">
                         <div class="card-content">
@@ -87,7 +88,6 @@
                             <p class="description">Meticulously sourced tap water. Doesn't make you sleep, but helps you *intend* to sleep well.</p>
                         </div>
                     </article>
-                    <!-- NEW Product 5: Social-Ease -->
                     <article class="product-card">
                         <img src="https://placehold.co/400x300/333333/ffffff?text=Social-Ease" alt="A small tin of mints">
                         <div class="card-content">
@@ -100,7 +100,7 @@
             </div>
         </section>
 
-        <!-- NEW Science Section -->
+        <!-- Science Section -->
         <section id="science" class="container">
             <h2>Our Groundbreaking (Non)Science</h2>
             <div class="science-content">
@@ -117,7 +117,7 @@
             </div>
         </section>
 
-        <!-- NEW Testimonials Section -->
+        <!-- Testimonials Section -->
         <section id="testimonials">
             <div class="container">
                 <h2>What Our Users Are Saying</h2>
@@ -144,7 +144,7 @@
             </div>
         </section>
 
-        <!-- NEW Quiz Section -->
+        <!-- Quiz Section -->
         <section id="quiz" class="container">
             <h2>Dosage Calculator</h2>
             <p class="quiz-intro">Answer these highly scientific questions to find your perfect non-optimal solution.</p>
@@ -178,6 +178,5 @@
         </div>
     </footer>
     
-    <script src="script.js"></script>
 </body>
 </html>
